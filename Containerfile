@@ -30,7 +30,6 @@ RUN alternatives --set python /usr/bin/python3
 COPY --from=quay.io/ansible/receptor:devel /usr/bin/receptor /usr/bin/receptor
 RUN mkdir -p /var/run/receptor
 ADD run.sh /run.sh
-ADD requirements-rt.txt /
 RUN pip install netaddr==0.8.0
 CMD /run.sh
 USER 1000
