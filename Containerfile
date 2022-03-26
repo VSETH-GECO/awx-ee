@@ -31,7 +31,7 @@ COPY --from=quay.io/ansible/receptor:devel /usr/bin/receptor /usr/bin/receptor
 RUN mkdir -p /var/run/receptor
 ADD run.sh /run.sh
 ADD requirements-rt.txt /
-RUN pip install -f /requirements-rt.txt && rm /requirements-rt.txt
+RUN pip install netaddr==0.8.0
 CMD /run.sh
 USER 1000
 RUN git lfs install
