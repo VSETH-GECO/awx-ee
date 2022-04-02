@@ -13,7 +13,7 @@ collections:
   - name: ansible.windows
   - name: redhatinsights.insights
   - name: kubernetes.core
-    version: 2.3.0
+    version: 2.2.3
   - name: cloud.common
     version: 2.1.0
   - name: community.general
